@@ -1,6 +1,6 @@
 ## StudyNotion
 
-🚀 **Live Demo:** [Click Here to Visit](https://mern-stack-project-git-b55edd-siddharthgupta1161-9457s-projects.vercel.app/)
+🚀 **Live Demo:** [Click Here to Visit](https://mern-stack-project-study-notion-fro.vercel.app/)
 
 StudyNotion is an e-learning platform where instructors can create courses, and students can enroll, track progress, and make payments via Razorpay. It is developed using MERN stack.
 
