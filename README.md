@@ -1,51 +1,256 @@
-## StudyNotion
+# 🎓 StudyNotion
 
-🚀 **Live Demo:** [Click Here to Visit](https://mern-stack-project-study-notion-fro.vercel.app/)
+> **A Full-Stack AI-Powered Learning Management System (LMS) built with the MERN Stack.**
 
-StudyNotion is an e-learning platform where instructors can create courses, and students can enroll, track progress, and make payments via Razorpay. It is developed using MERN stack.
-
-StudyNotion is an e-learning platform where instructors can create courses, and students can enroll, track progress, and make payments via Razorpay. It is developed using MERN stack.
+🚀 **Live Demo:** https://mern-stack-project-study-notion-fro.vercel.app/
 
 ---
 
-## Features
+## 📖 Overview
 
-- **User authentication and Authorization**: StudyNotion provides secure user registration and authentication using JWT (JSON Web Tokens). Users can sign up, log in, and manage their profiles with ease.
+StudyNotion is a full-stack Learning Management System (LMS) where instructors can create and manage courses while students can purchase, enroll, and track their learning progress.
 
-- **Courses and Lectures**: Instructors can create and edit created courses.
+The platform now includes **AI-powered learning assistance** using **Google Gemini**, allowing students to:
 
-- **Payment Integration**: Study Notion integrates with Razorpay for payment processing. Users can make secure payments for course enrollment and other services using various payment methods supported by Razorpay.
-
-- **Enrollment & Cart Functionality**: Students can enroll in courses, access course materials, and track their progress. Students can add courses to the cart and enroll after payment.
-
-- **Instructor Dashboard**: Instructors have access to a comprehensive dashboard to view information about their courses, students, and income. The dashboard provides charts and visualizations to present data clearly and intuitively. Instructors can monitor the total number of students enrolled in each course, track course performance, and view their income generated from course sales.
-
-- **Student Dashboard**: The Student Dashboard allows users to edit their profile, update details, and manage their learning journey. Students can view enrolled courses, track progress, and access course materials seamlessly.
-
-- **Ratings & Reviews**: The Ratings & Reviews feature enables students to share feedback on courses, helping others make informed choices.
-
-- **Email Notifications**: Automated emails for enrollment, purchase confirmations, and updates.
+- 🤖 Ask doubts about a lecture
+- 📖 Generate lecture summaries
+- ❓ Practice with AI-generated quizzes
 
 ---
 
-## Project UI
+# ✨ Features
 
-<img width="1920" height="1106" alt="Screenshot (571)" src="https://github.com/user-attachments/assets/6214074f-a296-4c05-8a73-5bf70b790d65" />
+## 👨‍🎓 Student Features
 
-<img width="1920" height="1098" alt="Screenshot (572)" src="https://github.com/user-attachments/assets/a5484ebc-f063-4ab4-a0bf-9b241e32fb1b" />
+- Secure Authentication (JWT)
+- Browse & Purchase Courses
+- Razorpay Payment Integration
+- Course Progress Tracking
+- Watch Video Lectures
+- Profile Management
+- Ratings & Reviews
 
-<img width="1920" height="1092" alt="Screenshot (573)" src="https://github.com/user-attachments/assets/69dad314-d2d5-4e68-b735-a00ee839d85a" />
+### 🤖 AI Learning Assistant
 
-<img width="1920" height="1098" alt="Screenshot (574)" src="https://github.com/user-attachments/assets/1554916d-8693-45f5-9f95-47926950e411" />
+- 💬 AI Doubt Solver
+- 📖 AI Lecture Summary Generator
+- ❓ AI Interactive Quiz Generator
+- Lecture-specific AI Responses using Gemini
 
-<img width="1920" height="1106" alt="Screenshot (576)" src="https://github.com/user-attachments/assets/def9868c-04ea-4a1c-b16d-d9794a2f12b1" />
+---
 
+## 👨‍🏫 Instructor Features
 
-## Important
+- Instructor Dashboard
+- Create Courses
+- Edit Courses
+- Upload Thumbnails
+- Upload Lecture Videos
+- Create Sections & Subsections
+- Revenue Dashboard
+- Student Analytics
 
-- Backend is in the server folder.
+---
 
-- First create the categories e.g. web dev, Python, etc. (without categories courses cannot be added). To create categories create an Admin account and go to dashboard then admin panel.
+## 🔐 Authentication
 
-- To create an Admin account first sign up with a student or instructor account then go to your Database under the users model and change that 'accountType' to 'Admin'.
+- JWT Authentication
+- Login / Signup
+- Forgot Password
+- OTP Verification
+- Role-based Authorization
+- Protected Routes
 
+---
+
+## 💳 Payments
+
+- Razorpay Integration
+- Secure Checkout
+- Purchase Verification
+- Enrollment after Payment
+
+---
+
+## 📩 Notifications
+
+- Enrollment Emails
+- Purchase Confirmation
+- OTP Emails
+- Password Reset Emails
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+- React.js
+- Redux Toolkit
+- Tailwind CSS
+- React Router
+- React Icons
+- React Markdown
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- Bcrypt
+
+### APIs & Services
+
+- Google Gemini AI
+- Razorpay
+- Cloudinary
+- Nodemailer
+
+### Deployment
+
+- Vercel
+- Render
+- MongoDB Atlas
+
+---
+
+# 🤖 AI Features
+
+StudyNotion now includes an AI-powered learning assistant.
+
+### 💬 Ask Doubts
+
+Students can ask questions related to any lecture and receive AI-generated explanations.
+
+---
+
+### 📖 Smart Summary
+
+Generate concise summaries of lectures for quick revision.
+
+---
+
+### ❓ Interactive Quiz
+
+Generate AI-powered quizzes based on lecture content with:
+
+- Multiple Choice Questions
+- Instant Feedback
+- Score Tracking
+- Answer Explanations
+
+---
+
+# 📷 Project Screenshots
+
+(Add your updated screenshots here)
+
+### 🏠 Home Page
+
+<img ...>
+
+### 📚 Course Player
+
+<img ...>
+
+### 🤖 StudyBuddy AI
+
+<img ...>
+
+### 👨‍🏫 Instructor Dashboard
+
+<img ...>
+
+### 👨‍🎓 Student Dashboard
+
+<img ...>
+
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/siddg1161/MERN-STACK-Project---Study-Notion.git
+```
+
+Install dependencies
+
+### Frontend
+
+```bash
+npm install
+npm start
+```
+
+### Backend
+
+```bash
+cd Server
+npm install
+npm start
+```
+
+---
+
+# 🔑 Environment Variables
+
+### Backend (.env)
+
+```env
+PORT=
+MONGODB_URL=
+
+JWT_SECRET=
+
+MAIL_HOST=
+MAIL_USER=
+MAIL_PASS=
+
+CLOUD_NAME=
+API_KEY=
+API_SECRET=
+FOLDER_NAME=
+
+RAZORPAY_KEY=
+RAZORPAY_SECRET=
+
+GEMINI_API_KEY=
+```
+
+---
+
+# 📌 Important
+
+- Backend code is inside the `Server` folder.
+- Create course categories before creating courses.
+- To create an Admin account:
+  - Register as Student/Instructor.
+  - Change `accountType` to `Admin` in MongoDB.
+
+---
+
+# 🚀 Future Enhancements
+
+- AI Flashcards
+- AI Study Planner
+- Learning Analytics
+- Voice-based AI Assistant
+- Certificate Generation
+
+---
+
+# 👨‍💻 Author
+
+**Siddharth Gupta**
+
+GitHub: https://github.com/siddg1161
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
