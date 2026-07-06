@@ -4,13 +4,19 @@ const SubSection = require("../models/SubSection")
 const CourseProgress = require("../models/CourseProgress")
 const Course = require("../models/Course")
 
+
+
 exports.updateCourseProgress = async (req, res) => {
+  console.log("========== updateCourseProgress HIT ==========");
+  console.log("BODY:", req.body);
   const { courseId, subsectionId } = req.body
   const userId = req.user.id
 
   try {
     // Check if the subsection is valid
     const subsection = await SubSection.findById(subsectionId)
+     console.log("Subsection:", subsection);
+
     if (!subsection) {
       return res.status(404).json({ error: "Invalid subsection" })
     }
@@ -20,6 +26,8 @@ exports.updateCourseProgress = async (req, res) => {
       courseID: courseId,
       userId: userId,
     })
+
+    console.log("Course Progress:", courseProgress);
 
     if (!courseProgress) {
       // If course progress doesn't exist, create a new one

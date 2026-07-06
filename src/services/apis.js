@@ -71,3 +71,9 @@ export const catalogData = {
 export const ratingsEndpoints = {
   REVIEWS_DETAILS_API: BASE_URL + "/course/getReviews",
 }
+
+export const aiEndpoints = {
+  ASK_DOUBT_API: BASE_URL + "/ai/ask",
+  GENERATE_SUMMARY_API: BASE_URL + "/ai/summary",
+  GENERATE_QUIZ_API: BASE_URL + "/ai/quiz",
+};

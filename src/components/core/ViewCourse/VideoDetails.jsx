@@ -10,6 +10,8 @@ import { markLectureAsComplete } from "../../../services/operations/courseDetail
 import { updateCompletedLectures } from "../../../slices/viewCourseSlice"
 import IconBtn from "../../common/IconBtn"
 
+import StudyBuddyAI from "./StudyBuddyAI";
+
 const VideoDetails = () => {
    const { courseId, sectionId, subSectionId } = useParams()
    const navigate = useNavigate()
@@ -228,6 +230,10 @@ const VideoDetails = () => {
             }
             <h1 className="mt-4 text-3xl font-semibold">{videoData?.title}</h1>
             <p className="pt-2 pb-6">{videoData?.description}</p>
+            <StudyBuddyAI
+              courseId={courseId}
+             subSectionId={subSectionId}
+            />
         </div>
     )
 }

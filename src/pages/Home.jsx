@@ -11,6 +11,7 @@ import InstructorSection from "../components/core/HomePage/InstructorSection"
 import ReviewSlider from "../components/common/ReviewSlider"
 import Footer from "../components/common/Footer"
 import ExploreMore from "../components/core/HomePage/ExploreMore"
+import StudyBuddyAISection from "../components/core/HomePage/StudyBuddyAISection";
 
 const Home = () => {
     return (
@@ -28,8 +29,8 @@ const Home = () => {
             </Link>
 
             <div className="text-center text-4xl font-semibold">
-              Empower Your Future with
-              <HighlighText text={"Coding Skills"} />
+              Learn Smarter with
+              <HighlighText text={"AI-Powered Education"} /> 
             </div>
 
             <div className="-mt-3 w-[90%] text-center text-lg font-bold text-richblack-300"> 
@@ -128,6 +129,7 @@ const Home = () => {
             </div>
 
             <ExploreMore></ExploreMore>
+            
 
           </div>
 
@@ -151,6 +153,17 @@ const Home = () => {
                  </div>
                 </div> 
             </div> 
+
+            {/* ================= StudyBuddy AI Section ================= */}
+
+            <div className="relative w-full bg-richblack-900 py-24">
+               {/* Background Glow */}
+               <div className="absolute left-1/2 top-20 h-72 w-72 -translate-x-1/2 rounded-full bg-yellow-500/10 blur-[140px]"></div>
+                    <div className="relative mx-auto w-11/12 max-w-maxContent">
+                      {/* AI Component */}
+                      <StudyBuddyAISection />
+                   </div>
+            </div>
 
             <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 ">
                 <div className="mb-10 mt-[-100px] flex flex-col justify-between gap-7 lg:mt-20 lg:flex-row lg:gap-0">

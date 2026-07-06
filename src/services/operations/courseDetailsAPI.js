@@ -342,6 +342,8 @@ export const getFullDetailsOfCourse = async (courseId, token) => {
 export const markLectureAsComplete = async (data, token) => {
   let result = null
   console.log("mark complete data", data)
+   console.log("API URL:", LECTURE_COMPLETION_API)
+  console.log("Token:", token)
   const toastId = toast.loading("Loading...")
   try {
     const response = await apiConnector("POST", LECTURE_COMPLETION_API, data, {
